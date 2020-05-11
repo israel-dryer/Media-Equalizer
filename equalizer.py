@@ -1,5 +1,5 @@
 """
-    A simple GUI template for a media equilizer built with Tkinter
+    A simple GUI template for a media equalizer built with Tkinter
     Author: Israel Dryer
     Modified: 2020-05-11
 """
@@ -9,10 +9,10 @@ from tkinter import ttk
 import ttkthemes
 
 
-# ------- Equilizer Functions ---------
+# ------- Equalizer Functions ---------
 
 def on_reset():
-    """Reset equilizer values to 50 percent"""
+    """Reset equalizer values to 50 percent"""
     for obj in eq_sliders:
         obj.set(50)
     presets.set('Normal')
@@ -30,11 +30,11 @@ def on_save():
     presets.set('Custom')
 
 
-# ------- Equilizer Window ---------
+# ------- Equalizer Window ---------
 
 root = tk.Tk()
 root.withdraw()  # hide the window until completely built
-root.title('The Great Equilizer')
+root.title('The Great Equalizer')
 root.iconbitmap('eqicon.ico')
 root.resizable(False, False)
 
